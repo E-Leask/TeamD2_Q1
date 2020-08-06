@@ -1,5 +1,3 @@
-package mobileservice;
-
 import java.util.*;
 
 class ServiceAccount {
