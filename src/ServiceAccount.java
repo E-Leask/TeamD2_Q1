@@ -37,4 +37,8 @@ class ServiceAccount {
 			System.out.println("Phone number doesn't exist in this service account");
 		}
 	}
+	
+	public ServicePackage getServicePackage() {
+		return this.servicePackage;		
+	}
 }
