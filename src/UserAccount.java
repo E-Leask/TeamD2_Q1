@@ -1,5 +1,3 @@
-package mobileservice;
-
 class UserAccount{
 	String userName;
 	String userAddress;
