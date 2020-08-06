@@ -1,8 +1,8 @@
 public abstract class ServicePackage {
 	String name;
-	double canadaCalling;
-	double usCalling;
-	double messaging;
+	String canadaCalling;
+	String usCalling;
+	String messaging;
 	int data;
 	int monthlyFee;
 	
@@ -15,7 +15,6 @@ public abstract class ServicePackage {
 		System.out.println(monthlyFee);
 		return monthlyFee;
 	}
-	
 	
 	public String toString() {
 		StringBuffer display = new StringBuffer();
