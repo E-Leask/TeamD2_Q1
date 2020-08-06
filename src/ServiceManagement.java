@@ -22,7 +22,7 @@ public interface ServiceManagement {
 	
 	public void getMonthlyFeesAllAccounts();
 	
-	public void getMonthlyFeesByUser();
+	public void getMonthlyFeesByUser(String userName);
 	
 
 }

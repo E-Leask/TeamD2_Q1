@@ -7,12 +7,10 @@ public abstract class ServicePackage {
 	int monthlyFee;
 	
 	String getName() {
-		System.out.println(name);
 		return name;
 	}
 	
 	int getMonthlyFee() {
-		System.out.println(monthlyFee);
 		return monthlyFee;
 	}
 	

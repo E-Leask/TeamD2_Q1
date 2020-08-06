@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ServiceManagementImpl implements ServiceManagement {
@@ -114,14 +115,14 @@ public class ServiceManagementImpl implements ServiceManagement {
 
 	@Override
 	public void getMonthlyFeesAllAccounts() {
-		// for (Account : accountList) { print Account.fee }
-		
+		for (ServiceAccount i:accountList) {
+			System.out.println(i.getServicePackage().getMonthlyFee());	 
+		}
 	}
 
 	@Override
-	public void getMonthlyFeesByUser() {
+	public void getMonthlyFeesByUser(String userName) {
 		// TODO Auto-generated method stub
-		
 	}
 
 }
