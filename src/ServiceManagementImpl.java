@@ -89,7 +89,8 @@ public class ServiceManagementImpl implements ServiceManagement {
 
 	@Override
 	public void updateAccount() {
-		// TODO Auto-generated method stub
+		//There is no distingushier in the accountList
+		//While interacting with client, how do we know which account in the accountList should be updated?
 		
 	}
 
