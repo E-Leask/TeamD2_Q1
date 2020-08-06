@@ -1,9 +1,10 @@
 public class PlatinumPackage extends ServicePackage {
 	public PlatinumPackage() {
 		name = "Platinum Package";
-		canada_calling = Double.POSITIVE_INFINITY;
-		us_calling = Double.POSITIVE_INFINITY;
+		canadaCalling = Double.POSITIVE_INFINITY;
+		usCalling = Double.POSITIVE_INFINITY;
 		messaging = Double.POSITIVE_INFINITY;
 		data = 10;
+		monthlyFee = 100;
 	}
 }
