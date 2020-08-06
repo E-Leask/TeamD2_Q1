@@ -3,8 +3,8 @@ package mobileservice;
 import java.util.*;
 
 class ServiceAccount {
-	ArrayList<UserAccount> user = new ArrayList<UserAccount>();
-	ArrayList<Integer> phoneNumber = new ArrayList<Integer>();
+	List<UserAccount> user = new ArrayList<UserAccount>();
+	List<Integer> phoneNumber = new ArrayList<Integer>();
 	ServicePackage servicePackage;
 	int monthlyFees;
 	
