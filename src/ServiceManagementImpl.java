@@ -2,7 +2,7 @@ import java.util.List;
 
 public class ServiceManagementImpl implements ServiceManagement {
 	
-	List<ServiceAccount> accountList = new List<ServiceAccount>();
+	List<ServiceAccount> accountList = new ArrayList<ServiceAccount>();
 
 	@Override
 	public void createAccount(String accountPackage) {
