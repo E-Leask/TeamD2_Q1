@@ -2,9 +2,9 @@ import java.util.List;
 
 public interface ServiceManagement {
 	
-	public void createAccount(String accountPackage);
+	public void createAccount();
 	
-	public void createAccounts(List<String> accountPackages);
+	public void createAccounts();
 	
 	public void removeAccount(String accountName);
 	
