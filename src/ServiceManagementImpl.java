@@ -6,16 +6,67 @@ public class ServiceManagementImpl implements ServiceManagement {
 
 	@Override
 	public void createAccount(String accountPackage) {
-		//Call factory method with accountPackage
-		//accountList.add(ServiceAccount)
-		
+		System.out.println("Current available service packages are: BasicPackage, SilverPackage, GoldPackage, and PlatinumPackage");
+		System.out.println("Please enter the service package for the new account:");
+		Scanner sc = new Scanner(System.in);
+		String service = sc.nextLine();
+		sc.close();
+		ServicePackage servicePackage;
+		ServiceAccount serviceAccount;
+		switch (service) {
+			case "BasicPackage": servicePackage = new BasicPackage(); 
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "SilverPackage": servicePackage = new SilverPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "GoldPackage": servicePackage = new GoldPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "PlatinumPackage": servicePackage = new PlatinumPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			default: System.out.println("Wrong package name being entered"); 
+				break;
+		}
 	}
 
 	@Override
 	public void createAccounts(List<String> accountPackages) {
-		// Call factory method
-		//accountList.addAll(ServiceAccount Obj)
-		
+		System.out.println("Current available service packages are: BasicPackage, SilverPackage, GoldPackage, and PlatinumPackage");
+		System.out.println("Please enter the service package for the new accounts separated by comma (one package per account):");
+		Scanner sc = new Scanner(System.in);
+		String servicesUserInput = sc.nextLine();
+		sc.close();
+		String[] services =  servicesUserInput.split(",*\\s*");
+		ServicePackage servicePackage;
+		ServiceAccount serviceAccount;
+		for (String service : services) {
+			switch (service) {
+			case "BasicPackage": servicePackage = new BasicPackage(); 
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "SilverPackage": servicePackage = new SilverPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "GoldPackage": servicePackage = new GoldPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			case "PlatinumPackage": servicePackage = new PlatinumPackage();
+				serviceAccount = new ServiceAccount(servicePackage);
+				accountList.add(serviceAccount);
+				break;
+			default: System.out.println("Wrong package name being entered, or input format is wrong (i.e. BasicPackage, GoldPackage)"); 
+				break;
+			}
+		}
 	}
 
 	@Override
